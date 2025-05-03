@@ -49,27 +49,6 @@ Bir Min Heap oluşturur, burada her ebeveyn düğümü, çocuk düğümlerinden 
 
 Bu algoritma, bir pivot eleman seçer ve diziyi iki parçaya böler: pivot'tan küçük olan elemanlar ve büyük olan elemanlar. Aynı işlemi her iki parça için özyinelemeli olarak uygular.
 
-## 🖥️ **Nasıl Kullanılır**
-
-1. Depoyu klonlayın veya kaynak kodunu indirin.
-2. `Main.java` dosyasını derleyin.
-
-   ```bash
-   javac Main.java
-   ```
-3. Programı çalıştırın.
-
-   ```bash
-   java Main
-   ```
-
-Program, `QuickSort` algoritması ile sıralanmış diziyi ekrana yazdıracaktır.
-
-## 📝 **Örnek Çıktı**
-
-```bash
-0 1 2 3 4 5 6 7 8 9
-```
 
 ## ⚙️ **Kullanılan Teknolojiler**
 
