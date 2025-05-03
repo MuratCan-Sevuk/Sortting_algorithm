@@ -1,76 +1,78 @@
-Java'da Sıralama Algoritmaları
 
---Genel Bakış--
 
-Bu Java programı, çeşitli sıralama algoritmalarını ve bir dizideki en büyük ve en küçük elemanları bulmaya yönelik yardımcı fonksiyonları uygular. Programda aşağıdaki sıralama algoritmaları bulunmaktadır:
+# Java'da Sıralama ve Arama Algoritmaları
 
--Bubble Sort (Kabarcık Sıralama)
+Bu proje, Java dilinde birkaç sıralama algoritması ve temel dizi işlemlerini içermektedir. Aşağıda her bir yöntemin işlevselliği ve açıklamaları bulunmaktadır:
 
--Selection Sort (Seçmeli Sıralama)
+## 📋 **Özellikler**
 
--Insertion Sort (Eklemeli Sıralama)
+1. **Max** - Bir dizideki maksimum elemanı bulur.
+2. **Min** - Bir dizideki minimum elemanı bulur.
+3. **BubbleSort** - Bubble sort algoritması ile diziyi sıralar.
+4. **SelectionSort** - Selection sort algoritması ile diziyi sıralar.
+5. **InsertionSort** - Insertion sort algoritması ile diziyi sıralar.
+6. **MaxHeap** - Bir diziden Max Heap oluşturur.
+7. **MinHeap** - Bir diziden Min Heap oluşturur.
+8. **QuickSort** - Quicksort algoritması ile diziyi sıralar.
 
--Heap Sort (Maksimum ve Minimum Yığın - MaxHeap & MinHeap)
+## 🛠️ **Gerçekleştirilen Algoritmalar**
 
--Quick Sort (Hızlı Sıralama)
+### 1. **Max**
 
---Fonksiyonlar--
+Verilen dizideki maksimum elemanı bulur.
 
-1. Max(int[] n)
+### 2. **Min**
 
-Bir dizideki en büyük değeri bulur ve döndürür.
+Verilen dizideki minimum elemanı bulur.
 
-2. Min(int[] n)
+### 3. **BubbleSort**
 
-Bir dizideki en küçük değeri bulur ve döndürür.
+Bu algoritma, her bir ardışık eleman çiftini karşılaştırır ve eğer yanlış sıradaysa, yer değiştirir. Bu işlem, dizinin sıralandığı ana kadar tekrarlanır.
 
-3. BubbleSort(int[] n)
+### 4. **SelectionSort**
 
-Bubble Sort algoritmasını kullanarak bir diziyi sıralar.
+Selection Sort, diziyi iki kısma ayırır: sıralı kısım ve sırasız kısım. Her seferinde sırasız kısımdan en küçük elemanı seçer ve sıralı kısmın sonuna ekler.
 
-4. SelectionSort(int[] n)
+### 5. **InsertionSort**
 
-Selection Sort algoritmasını kullanarak bir diziyi sıralar.
+Bu algoritma, diziyi tek tek ele alır ve her elemanı doğru yerine yerleştirir.
 
-5. InsertionSort(int[] n)
+### 6. **MaxHeap**
 
-Insertion Sort algoritmasını kullanarak bir diziyi sıralar.
+Bir Max Heap oluşturur, burada her ebeveyn düğümü, çocuk düğümlerinden büyük veya ona eşittir. Bu algoritma, elemanları Max Heap özelliğini sağlamak için yer değiştirir.
 
-6. MaxHeap(int[] n)
+### 7. **MinHeap**
 
-Bir diziyi Maksimum Yığın (Max Heap) haline getirir.
+Bir Min Heap oluşturur, burada her ebeveyn düğümü, çocuk düğümlerinden küçük veya ona eşittir. Bu algoritma, elemanları Min Heap özelliğini sağlamak için yer değiştirir.
 
-7. MinHeap(int[] n)
+### 8. **QuickSort**
 
-Bir diziyi Minimum Yığın (Min Heap) haline getirir.
+Bu algoritma, bir pivot eleman seçer ve diziyi iki parçaya böler: pivot'tan küçük olan elemanlar ve büyük olan elemanlar. Aynı işlemi her iki parça için özyinelemeli olarak uygular.
 
-8. QuickSort(int[] n, int it, int is, int p)
+## 🖥️ **Nasıl Kullanılır**
 
-Quick Sort algoritmasını kullanarak bir diziyi sıralar (mevcut uygulama hatalı olabilir, gözden geçirilmesi gerekebilir).
+1. Depoyu klonlayın veya kaynak kodunu indirin.
+2. `Main.java` dosyasını derleyin.
 
---Programı Çalıştırma--
+   ```bash
+   javac Main.java
+   ```
+3. Programı çalıştırın.
 
-Main.java dosyasını Java projenize kopyalayın.
+   ```bash
+   java Main
+   ```
 
-Programı bir Java derleyicisi ile derleyip çalıştırın:
+Program, `QuickSort` algoritması ile sıralanmış diziyi ekrana yazdıracaktır.
 
-javac Main.java
-java Main
+## 📝 **Örnek Çıktı**
 
-Program, önceden tanımlanmış {3,2,5,0,1,8,7,6,9,4} dizisini (değiştirilebilir) Quick Sort ile sıralayarak çıktıyı ekrana yazdıracaktır.
+```bash
+0 1 2 3 4 5 6 7 8 9
+```
 
---Notlar--
+## ⚙️ **Kullanılan Teknolojiler**
 
-Quick Sort algoritmasının mevcut uygulamasında hatalar olabilir ve beklenildiği gibi çalışmayabilir.
+* Java (JDK 8+)
 
-Heap Sort fonksiyonları (MaxHeap ve MinHeap), tam anlamıyla bir sıralama işlemi yapmaz, yalnızca yığın (heap) işlemlerini gerçekleştirir.
 
-Program, daha fazla sıralama algoritması eklenerek ve mevcut olanlar optimize edilerek geliştirilebilir.
-
---Lisans--
-
-Bu proje MIT lisansı ile lisanslanmıştır. Dilediğiniz gibi kullanabilir ve geliştirebilirsiniz.
-
-Yazar
-
-Murat Can Sevük
